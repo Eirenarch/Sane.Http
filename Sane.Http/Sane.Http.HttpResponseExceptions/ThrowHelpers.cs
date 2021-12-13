@@ -25,7 +25,7 @@ public static class ThrowHelpers
 
     public static void ThrowNotFoundIfNull([NotNull] object? o)
     {
-        if (o == null)
+        if (o is null)
         {
             ThrowNotFound();
         }
@@ -33,7 +33,7 @@ public static class ThrowHelpers
 
     public static void ThrowNotFoundIfNull([NotNull] object? o, string message)
     {
-        if (o == null)
+        if (o is null)
         {
             ThrowNotFound(message);
         }
@@ -41,7 +41,7 @@ public static class ThrowHelpers
 
     public static void ThrowNotFoundIfNull([NotNull] object? o, object body)
     {
-        if (o == null)
+        if (o is null)
         {
             ThrowNotFound(body);
         }
