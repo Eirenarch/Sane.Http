@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sane.Http.HttpResposneExceptions.Demo", "Sane.Http.HttpResposneExceptions.Demo\Sane.Http.HttpResposneExceptions.Demo.csproj", "{8BAB86BD-8C6E-4F54-8C5C-9162AAD2E946}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sane.Http.HttpResponseExceptions", "Sane.Http.HttpResponseExceptions\Sane.Http.HttpResponseExceptions.csproj", "{65F3C80B-C100-41A6-B8B1-9C5EA7F75A11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BAB86BD-8C6E-4F54-8C5C-9162AAD2E946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BAB86BD-8C6E-4F54-8C5C-9162AAD2E946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BAB86BD-8C6E-4F54-8C5C-9162AAD2E946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BAB86BD-8C6E-4F54-8C5C-9162AAD2E946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65F3C80B-C100-41A6-B8B1-9C5EA7F75A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65F3C80B-C100-41A6-B8B1-9C5EA7F75A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65F3C80B-C100-41A6-B8B1-9C5EA7F75A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65F3C80B-C100-41A6-B8B1-9C5EA7F75A11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E98792B-7BAA-4C05-9AC9-FBDEE4A884CD}
+	EndGlobalSection
+EndGlobal
