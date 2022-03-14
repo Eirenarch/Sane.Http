@@ -1,10 +1,27 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>Sane.Http.HttpResponseExceptions</PackageId>
+    <Authors>Mihail Kochanov</Authors>
+    <Company />
+    <Product />
+    <Description>HttpResponseExceptions for ASP.NET Core</Description>
+    <PackageProjectUrl>https://github.com/Eirenarch/Sane.Http</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Eirenarch/Sane.Http</RepositoryUrl>
+    <PackageTags>HttpResponseException;</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
