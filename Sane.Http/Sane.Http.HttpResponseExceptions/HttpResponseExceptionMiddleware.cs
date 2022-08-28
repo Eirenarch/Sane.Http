@@ -2,6 +2,7 @@
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 
 internal class HttpResponseExceptionMiddleware
@@ -30,14 +31,22 @@ internal class HttpResponseExceptionMiddleware
             context.Response.StatusCode = (int)httpResponseException.StatusCode;
             context.Response.Headers.Clear();
 
-            if(httpResponseException.Body is null)
+            if (httpResponseException.Body is null)
             {
                 context.Response.ContentType = "text/plain";
                 await context.Response.WriteAsync(httpResponseException.Message);
             }
             else
             {
-                context.Response.ContentType = "application/json";
+                if (httpResponseException.Body is ProblemDetails)
+                {
+                    context.Response.ContentType = "application/problem+json";
+                }
+                else
+                {
+                    context.Response.ContentType = "application/json";
+                }
+
                 await JsonSerializer.SerializeAsync(context.Response.Body, httpResponseException.Body);
             }
         }
