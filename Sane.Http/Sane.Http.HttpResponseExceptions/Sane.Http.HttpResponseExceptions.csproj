@@ -14,7 +14,8 @@
     <RepositoryUrl>https://github.com/Eirenarch/Sane.Http</RepositoryUrl>
     <PackageTags>HttpResponseException;</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

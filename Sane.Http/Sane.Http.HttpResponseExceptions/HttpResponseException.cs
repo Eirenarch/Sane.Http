@@ -32,6 +32,7 @@ public class HttpResponseException : Exception
     /// <param name="body">The object which will be serialized to JSON and delivered as application/json in the response body</param>
     public HttpResponseException(HttpStatusCode statusCode, object body) : base()
     {
+        StatusCode = statusCode;
         Body = body;
     }
 }
