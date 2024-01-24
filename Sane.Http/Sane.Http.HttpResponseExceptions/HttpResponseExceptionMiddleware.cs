@@ -7,6 +7,7 @@ using System.Text.Json;
 
 internal class HttpResponseExceptionMiddleware
 {
+    private static JsonSerializerOptions JsonSerializerOptions { get; } = new JsonSerializerOptions(JsonSerializerDefaults.Web);
     private RequestDelegate Next { get; }
 
     public HttpResponseExceptionMiddleware(RequestDelegate next)
@@ -47,7 +48,7 @@ internal class HttpResponseExceptionMiddleware
                     context.Response.ContentType = "application/json";
                 }
 
-                await JsonSerializer.SerializeAsync(context.Response.Body, httpResponseException.Body);
+                await JsonSerializer.SerializeAsync(context.Response.Body, httpResponseException.Body, JsonSerializerOptions);
             }
         }
     }
